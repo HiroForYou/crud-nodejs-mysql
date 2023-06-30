@@ -3,7 +3,6 @@ import mysql from 'mysql2/promise';
 import dotenv from "dotenv";
 
 dotenv.config();
-console.log("process.env.DB_PASSWORD,", process.env.DB_PASSWORD)
 
 export const pool = await mysql.createConnection(process.env.DB_URL);
 
