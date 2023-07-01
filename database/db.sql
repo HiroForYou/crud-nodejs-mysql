@@ -18,8 +18,8 @@ CREATE TABLE client (
 
 CREATE TABLE clientType (
   idclientType INT(6) UNSIGNED NOT NULL AUTO_INCREMENT,
-  name VARCHAR(50) NOT NULL,
-  datail VARCHAR(50),
+  name VARCHAR(50),
+  detail VARCHAR(50),
   PRIMARY KEY (`idclientType`)
 );
 
@@ -31,3 +31,4 @@ describe client;
 describe clientType;
 
 drop table client;
+drop table clientType;
